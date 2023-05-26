@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background:#080909 ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ani {
+    position: relative;
+    font-size: 10em;
+    margin-top: 150px;
+    margin-left: 250px;
+    letter-spacing: 15px;
+    color:crimson;
+    text-transform: uppercase;
+    width:900px;
+    justify-content: center;
+    text-align: center;
+-webkit-box-reflect: below 1px linear-gradient(text-transparent,#00004e);
+line-height: 0.7em;
+outline: none;
+animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0% {
+        color:rgba(0, 0, 0, 0.75);
+        box-shadow: none;
+    }
+     100%{
+        color:#fff  ;
+        box-shadow: 0 0 10px #d21098,
+        0 0 20px #d21098,
+        0 0 40px #d21098,
+        0 0 60px #d21098,
+        0 0 80px #d21098,
+        0 0 180px #d21098,
+        0 0 200px #d21098;
+    }
+}
+
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.header h3{
+color:white;
+font-family: 'Courier New', Courier, monospace;
+margin-top:70px;
+text-align: center;
+justify-content: center;
+font-size: 60px;
+letter-spacing: 20px;
+}
+
+.header h2{
+color:#eb0c78;
+margin-top: 10px;
+ font-family: 'Courier New', Courier, monospace;
+text-align: center;
+justify-content: center;
+font-size: 50px;
+font-weight: 800;
+}
+
+
+.new h1{
+    color:#eb0c78;
+    padding: 20px;
+margin-top: 30px;
+}
+
+.new p{
+    font-weight: 700;
+    color:white;
+    letter-spacing: 3px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.venue{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+.venue1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 750px;
+}
+
+
+.new{
+    border: 2px solid white;
+    padding: 30px;
+    text-align: center;
+    animation: animatess 5s linear infinite;
+}
+
+@keyframes animatess{
+    0% {
+        color:rgba(0, 0, 0, 0.75);
+        box-shadow: none;
+    }
+     100%{
+        color:#fff  ;
+        box-shadow: 0 0 10px #ddab15,
+        0 0 20px #ddab15,
+        0 0 20px #ddab15,
+        0 0 40px #ddab15,
+        0 0 50px #ddab15;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 80%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left:0%;
+      width: 100%;
+    }
+  }
+
+  .text1{
+    animation: 20s 1 linear slidein ;
+    color:#ddab15;
+    font-weight: 700;
+    font-size: 20px;
+    background-color:purple;
+  }
